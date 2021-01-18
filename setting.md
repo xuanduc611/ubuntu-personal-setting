@@ -1,6 +1,13 @@
 # SETTING
 
-## Vim editor
+## Contents
+
+* [Editor - Vim](#editor---vim)
+* [Bash prompt](#bash-prompt)
+* [Editor - VS Code](#editor---vs-code)
+* [ibus unikey](#ibus-unikey)
+
+## Editor - Vim
 
 Create `~/.vimrc` if the file hasn't existed yet.
 
@@ -59,7 +66,7 @@ PS1="\${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[38;5;10m\]\u\[$(tp
   * Open `Setting`.
   * Type `whitespace` in search bar.
   
-## ibus-unikey
+## ibus unikey
 
 ### Install 
 
