@@ -6,6 +6,7 @@
 * [Bash prompt](#bash-prompt)
 * [Editor - VS Code](#editor---vs-code)
 * [ibus unikey](#ibus-unikey)
+* [git - Install latest version](#git---install-latest-version)
 
 ## Editor - Vim
 
@@ -62,9 +63,13 @@ PS1="\${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[38;5;10m\]\u\[$(tp
 ```
 
 ## Editor - VS Code
+
+My favourite setting
+
 * Show whitespace character
   * Open `Setting`.
   * Type `whitespace` in search bar.
+ * Turn on/off minimap
   
 ## ibus unikey
 
@@ -82,3 +87,11 @@ $ ibus restart
 ![2](./image/2.png)
 
 ![3](./image/3.png)
+
+## git - Install latest version
+
+``` shell
+$ sudo add-apt-repository ppa:git-core/ppa  
+$ sudo apt update  
+$ sudo apt install git
+```
