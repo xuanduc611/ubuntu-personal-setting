@@ -2,7 +2,7 @@
 
 ## Vim editor
 
-Create `~/.vimrc` if the file hasn't exist yet.
+Create `~/.vimrc` if the file hasn't existed yet.
 
 ``` shell
 $ touch ~/.vimrc
@@ -35,14 +35,39 @@ set linenumber
 ## Bash prompt
 You can use bashpromt generator like [bashrcgenerator.com](http://bashrcgenerator.com/) to get your desired setting for PS1.
 
-Open `~/.bashrc` and add below lines
+**Disclaimer**: I found a bug of this project on 2021 Jan 18, but I haven't found source code of it to fix it. The tool does not generate script to **bold** your `hostname`, you should add it by yourself.
+
+You can refer the way that I implemented successfully for my machine.
+* Open `~/.bashrc` and comment below lines
 
 ``` bash
 if [ "$color_prompt" = yes ]; then
-#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-PS1="\${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[38;5;10m\]\u\[$(tput sgr0)\]\[$(tput bold)\]@\[$(tput sgr0)\]\[\033[01;32m\]\[\033[38;5;10m\]\h\[$(tput sgr0)\]:\[\033[01;34m\]\W\[\033[00m\]\$ "
-
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 ```
+
+* Then replace that block with 
+
+``` bash
+PS1="\${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[38;5;10m\]\u\[$(tput sgr0)\]\[$(tput bold)\]@\[$(tput sgr0)\]\[\033[01;32m\]\[\033[38;5;10m\]\h\[$(tput sgr0)\]:\[\033[01;34m\]\W\[\033[00m\]\$ "
+```
+
+## Editor - VS Code
+* Show whitespace character
+  * Open `Setting`.
+  * Type `whitespace` in search bar.
+  
+## ibus-unikey
+
+### Install 
+
+``` shell
+$ sudo apt-get instal ibus-unikey
+$ ibus restart
+```
+
+### Config to type Vietnames
+
+
