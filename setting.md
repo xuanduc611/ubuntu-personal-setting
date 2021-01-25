@@ -7,6 +7,7 @@
 * [Editor - VS Code](#editor---vs-code)
 * [ibus unikey](#ibus-unikey)
 * [git - Install latest version](#git---install-latest-version)
+* [gparted](#gparted)
 
 ## Editor - Vim
 
@@ -99,4 +100,13 @@ $ ibus restart
 $ sudo add-apt-repository ppa:git-core/ppa  
 $ sudo apt update  
 $ sudo apt install git
+```
+
+## gparted
+
+`gparted` helps you to manipulate partition, format disks,..
+
+``` shell
+$ sudo apt-get update
+$ sudo apt-get install gparted
 ```
