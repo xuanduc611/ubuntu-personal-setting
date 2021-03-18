@@ -70,6 +70,7 @@ PS1="\${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[38;5;10m\]\u\[$(tp
     * Open `Setting`.
     * Type `whitespace` in search bar.
   * Turn on/off minimap
+  * Turn off error squiggles (a.k.a annoying red wavy lines)
   * (updating...)
 * My favourite extension
   * git
