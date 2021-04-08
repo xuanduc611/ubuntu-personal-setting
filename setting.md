@@ -80,7 +80,7 @@ PS1="\${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[38;5;10m\]\u\[$(tp
 ### Install 
 
 ``` shell
-$ sudo apt-get instal ibus-unikey
+$ sudo apt-get install ibus-unikey
 $ ibus restart
 ```
 
