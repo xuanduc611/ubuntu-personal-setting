@@ -73,6 +73,7 @@ PS1="\${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[38;5;10m\]\u\[$(tp
   * git
   * markdown
   * Text marker (Highlight text)
+  * Sync scroll
   * (updating...)
   
 ## ibus unikey
