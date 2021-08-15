@@ -68,6 +68,7 @@ PS1="\${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[38;5;10m\]\u\[$(tp
     * Type `whitespace` in search bar.
   * Turn on/off minimap
   * Turn off error squiggles (a.k.a annoying red wavy lines)
+  * C_Cpp: Dim Inactive Regions
   * (updating...)
 * My favourite extension
   * git
