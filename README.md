@@ -36,6 +36,11 @@ set softtabstop=4   " Sets the number of columns for a TAB.
 set expandtab       " Expand TABs to spaces.
 set autoindent
 set number
+syntax on
+set laststatus=2    " Show name of current file
+
+set mouse=a         " Put the cursor at mouse pointer
+set hlsearch        " Highlight search result
 ```
 
 ## Bash prompt
